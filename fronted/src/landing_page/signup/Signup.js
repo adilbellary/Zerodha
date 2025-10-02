@@ -16,8 +16,8 @@ function Signup() {
     e.preventDefault();
     setError("");
     const endpoint = isLogin
-      ? "http://localhost:3002/api/login"
-      : "http://localhost:3002/api/signup";
+      ? "https://zerodha-backend-hdjh.onrender.com/api/login"
+      : "https://zerodha-backend-hdjh.onrender.com/api/signup";
     try {
       // Only send username for signup
       const payload = isLogin
