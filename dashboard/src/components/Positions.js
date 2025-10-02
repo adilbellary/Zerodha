@@ -7,7 +7,7 @@ const Positions = () => {
 
   useEffect(() => {
     axios.get("https://zerodha-backend-hdjh.onrender.com/allPositions").then((res) => {
-      console.log("Positions data:", res.data); e
+      console.log("Positions data:", res.data);
       setPositions(res.data);
     });
   }, []);
