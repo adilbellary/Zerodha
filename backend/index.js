@@ -19,7 +19,19 @@ const uri = process.env.MONGO_URL;
 
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: [
+    'https://zerodha-frontend-sandy.vercel.app',
+    'https://zerodha-dashboard-sand.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:3001',
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(bodyParser.json());
 
 // Signup route
