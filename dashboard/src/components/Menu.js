@@ -109,7 +109,7 @@ const Menu = () => {
             }}
             onClick={() => {
               localStorage.removeItem("token");
-              window.location.href = "http://localhost:3001/signup";
+              window.location.href = "https://zerodha-frontend-sandy.vercel.app/signup";
             }}
           >
             Logout
