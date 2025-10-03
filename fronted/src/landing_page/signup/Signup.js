@@ -32,7 +32,7 @@ function Signup() {
       if (res.ok) {
   localStorage.setItem("token", data.token);
   // Redirect to dashboard app with token in URL
-  window.location.href = "https://zerodha-backend-hdjh.onrender.com/?token=" + data.token;
+  window.location.href = "https://zerodha-dashboard-sand.vercel.app/?token=" + data.token;
       } else {
         setError(data.message || "Authentication failed");
       }
